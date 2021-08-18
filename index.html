@@ -6,12 +6,27 @@
 <head>
   <meta charset = "UTF-8">
   <link rel="stylesheet" type="text/css" href="css/main.css">
-  <title>Kyoohyung Han's Page</title>
+  <title>Kyoohyung Han's Page (trying to change using Vue 3.0)</title>
 </head>
 
 <!-- BODY PART -->
-  
+
 <body>
+
+  <div id="app">{{message}}</div>
+
+  <script>
+  new Vue({
+      el: '#app',
+      data: {
+          message: 'Hello Vue.js!'
+      }
+  });
+  </script>
+
+</body>
+
+<!-- <body>
   
   <div class = "topdiv">
     <h1>Kyoohyung Han's Page</h1>
@@ -95,6 +110,6 @@
       <li>Faster Homomorphic Discrete Fourier Transforms and Improved FHE Bootstrapping, <a href = "https://github.com/KyoohyungHan/ImprovedLT">https://github.com/KyoohyungHan/ImprovedLT</a></li>
     </ol>
   </div>
-</body>
+</body> -->
   
 </html>
